@@ -41,7 +41,7 @@ export class fileUploadService {
   }
 
   getFilePreview(fileID) {
-    return this.blogBucket.getFilePreview(
+    return this.blogBucket.getFileView(
       conf.appwriteBlogImageBucketID,
       fileID
     );
